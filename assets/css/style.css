@@ -1,3 +1,10 @@
 * {
-    
+
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* line height adjusts distance between text */
+    line-height: 1.3;
+  }
