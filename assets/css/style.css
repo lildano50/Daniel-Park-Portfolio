@@ -1,42 +1,122 @@
+:root {
+    --bgblue: #13293d;
+    --textcolor: #fff;
+}
+
 * {
+    box-sizing: border-box;
     margin:0;
     padding:0; 
 }
 
-nav ul {
-    display: flex;
-    justify-content:right;
-    min-width: 100px;
-    padding: 20px;
-  }
-
+/* Header and Navigation Bar*/
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: #13293d;
-    color: #fff;
+    padding: 20px;
+    background-color: var(--bgblue);
+    color: var(--textcolor);
+    z-index: 2;
 }
 
 header h1 {
+    display: inline-block;
+    font-size: 30px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
 
 }
 
-header h3 {
-
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
 }
 
-header p {
-
+.backgroundimg {
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/background.webp");
+    background-size: cover;
+    background-position: center;
 }
 
+/* Main Page Body */
+
+main {
+    display: flex;
+    margin-top: 2%;
+    flex-direction: row;
+  }
+
+.aboutme {
+    height: 300px;
+    width: 300px;
+}
 .card {
-
+    flex: 1 0 200px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 5px solid #00688B;
 }
 
 
 
+.card h2 {
+    background-color: var(--bgblue);
+    display: inline;
+    color: var(--textcolor);
+    position:absolute;
+
+}
+.card p {
+    background-color: #4682b4;
+    color: var(--textcolor);
+    display:inline-block;
+    position: relative;
+}
+/* Card Background Images */
+#python {
+    background-image: url("../images/soccer.jpg");
+    background-size: cover;
+}
+
+#horiseon {
+    background-image: url("../images/horiseon.jpg");
+    background-size: cover;
+}
+
+#swift {
+    background-image: url("../images/swift.png");
+    background-size: cover;
+}
+
+#cplus {
+    background-image: url("../images/cplus.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#html {
+    background-image: url("../images/html.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Resizing Settings */
 @media screen and (max-width: 768px) {
     header,
     main {
