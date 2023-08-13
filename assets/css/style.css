@@ -11,33 +11,45 @@
 
 /* Header and Navigation Bar*/
 header {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     background-color: var(--bgblue);
     color: var(--textcolor);
-    z-index: 2;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 header h1 {
     display: inline-block;
     font-size: 30px;
-}
-
-header nav ul {
-    list-style-type: none;
+    padding-top: 15px;
+    padding-left: 20px;
 }
 
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
-
+    list-style-type: none;
+    font-size: 20px;
 }
 
 header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-size: 20px;
 }
+
+a {
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--textcolor);
+}
+
+/* Background Image Below Header - From Open Source Website */
 
 .backgroundimg {
     height: 200px;
@@ -47,46 +59,65 @@ header nav {
     background-position: center;
 }
 
-/* Main Page Body */
 
+/* Main Page/Body */
 main {
-    display: flex;
-    margin-top: 2%;
+    /* display: flex; */
     flex-direction: row;
+    background-color: red;
   }
 
-.aboutme {
-    height: 300px;
-    width: 300px;
-}
-.card {
+/* About Me */
+.aboutMeCard {
     flex: 1 0 200px;
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
+    display: inline-flex;
+    padding: 0 0 10px 0;
+    width: 300px;
+    height: 300px;
+    /* margin: 20px; */
+    border: 5px solid #00688B;
+}
+#danny {
+    width: 200px;
+}
+#aboutme {
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+/* Projects */
+.card {
+    /* flex: 1 0 200px;
+    display: inline-flex; */
+    padding: 0 0 10px 0;
     width: 300px;
     height: 300px;
     margin: 20px;
     border: 5px solid #00688B;
+
 }
-
-
 
 .card h2 {
     background-color: var(--bgblue);
-    display: inline;
     color: var(--textcolor);
-    position:absolute;
-
+    display: inline-block;
+    font-size: 20px;
+    word-wrap: break-word;
+    padding: 10px;
+    height: 55px;
+    width: 100%;
 }
 .card p {
+    display: none;
     background-color: #4682b4;
     color: var(--textcolor);
-    display:inline-block;
-    position: relative;
+    /* display:inline-block; */
+    /* position: relative; */
+    margin-top: 20px;
 }
+
 /* Card Background Images */
 #python {
     background-image: url("../images/soccer.jpg");
@@ -115,6 +146,11 @@ main {
     background-position: center;
 }
 
+/* Footer */
+
+#contact {
+    font-size: large;
+}
 
 /* Resizing Settings */
 @media screen and (max-width: 768px) {
