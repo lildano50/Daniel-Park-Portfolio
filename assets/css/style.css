@@ -1,17 +1,19 @@
+/* Whole Page Attributes */
 :root {
     --bgblue: #13293d;
     --textcolor: #fff;
 }
-
 * {
     box-sizing: border-box;
     margin:0;
     padding:0;
     font-family: Helvetica, sans-serif; 
 }
-
 body {
     background-color: #13293d;
+}
+a {
+    text-decoration: none;
 }
 
 /* Header and Navigation Bar*/
@@ -20,36 +22,27 @@ header {
     padding-bottom: 10px;
     background-color: var(--bgblue);
     color: var(--textcolor);
-    /* position: fixed; */
     top: 0;
     width: 100%;
     overflow: hidden;
 }
-
 header h1 {
     display: inline-block;
     font-size: 30px;
     padding-top: 15px;
     padding-left: 20px;
 }
-
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
     list-style-type: none;
     font-size: 20px;
 }
-
 header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
 }
-
-a {
-    text-decoration: none;
-}
-
 header a:hover {
     color: var(--textcolor);
 }
@@ -65,6 +58,17 @@ header a:hover {
 
 
 /* Main Page/Body */
+.mainFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex {
+    flex: 1 0 99%;
+    display: block;
+}
+
 .section {
     display: flex;
     justify-content: space-between;
@@ -72,8 +76,8 @@ header a:hover {
 }
 
 /* About Me */
-/*Profile Image Formatting*/
 
+/*Profile Image Formatting*/
 #danny {
     width: 170px;
     height: 235px;
@@ -107,20 +111,25 @@ header a:hover {
     margin-right: 20px;
     height: 200px;
 }
-
 #background {
-    flex: 1 0 500px;
-    display: inline-block;
+    /* flex: 1 0 500px;
     margin: 10px;
     margin-top: 40px;
     height: 300px;
+    flex-wrap: wrap; */
+    flex: 1 0 300px;
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid #00688B;
+    position: relative;
 }
 
 /* Projects */
 .card:hover {
     box-shadow: 5px 10px 18px yellow
 }
-
 .link {
     position: absolute;
     width: 100%;
@@ -147,7 +156,6 @@ header a:hover {
 .card h2 {
     background-color: var(--bgblue);
     color: var(--textcolor);
-    /* display: inline-block; */
     font-size: 20px;
     word-wrap: break-word;
     padding: 10px;
@@ -174,23 +182,19 @@ header a:hover {
     background-size: cover;
     background-position: center;
 }
-
 #horiseon {
     background-image: url("../images/horiseon.jpg");
     background-size: cover;
 }
-
 #swift {
     background-image: url("../images/swift.png");
     background-size: cover;
 }
-
 #cplus {
     background-image: url("../images/cplus.png");
     background-size: cover;
     background-position: center;
 }
-
 #html {
     background-image: url("../images/html.jpg");
     background-size: cover;
@@ -198,27 +202,22 @@ header a:hover {
 }
 
 /* Footer */
-
 #contact {
     text-align: center;
     color: var(--textcolor);
     padding: 10px;
 }
-
 footer hr {
     width: 300px;
     margin: auto;
 }
-
 #contact h2 {
     font-size: 30px;
     padding: 5px;
 }
-
 #contact a:hover {
     color: var(--textcolor);
 }
-
 #contact ul {
     padding: 10px;
     font-size: 20px;
@@ -233,10 +232,5 @@ footer hr {
   
     section {
       padding-right: 0;
-    }
-  
-    aside {
-      width: 100%;
-      text-align: center;
     }
   }
