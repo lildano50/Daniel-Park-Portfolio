@@ -56,18 +56,7 @@ header a:hover {
     background-position: center;
 }
 
-
-/* Main Page/Body */
-.mainFlex {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.flex {
-    flex: 1 0 99%;
-    display: block;
-}
+/* Main Body */
 
 .section {
     display: flex;
@@ -75,58 +64,17 @@ header a:hover {
     flex-wrap: wrap;
 }
 
-/* About Me */
+        /* About Me */
 
 /*Profile Image Formatting*/
 #danny {
-    width: 170px;
-    height: 235px;
-    float: left;
-    margin-right: 10px;
-}
-#aboutme h2 {
-    background-color: var(--bgblue);
-    color: var(--textcolor);
-    font-size: 20px;
-    text-align: right;
-    width: 170px;
-    padding: 10px 5px 0px 10px;
-    height: 40px;
-    position:absolute;
-    top: 0;
-    left: 0;
-}
-#aboutme {
-    width: 99%;
-    height: 200px;
-    margin: 10px;
-    font-size: 20px;
-    color: var(--textcolor);
-    position: relative;
-    margin-bottom: 100px;
-}
-#aboutme hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    height: 200px;
-}
-#background {
-    /* flex: 1 0 500px;
-    margin: 10px;
-    margin-top: 40px;
-    height: 300px;
-    flex-wrap: wrap; */
-    flex: 1 0 300px;
-    display: block;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    border: 5px solid #00688B;
-    position: relative;
+    background-image: url("../images/danny.jpg");
+    background-size:contain;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 
-/* Projects */
+        /* Projects */
 .card:hover {
     box-shadow: 5px 10px 18px yellow
 }
@@ -138,7 +86,6 @@ header a:hover {
     bottom: 0;
     z-index: 1;
 }
-
 .card.first {
     flex: 1 0 99%;
     display: block;
@@ -151,7 +98,6 @@ header a:hover {
     margin: 10px;
     border: 5px solid #00688B;
     position: relative;
-
 }
 .card h2 {
     background-color: var(--bgblue);
@@ -164,7 +110,6 @@ header a:hover {
     position:absolute;
     top: 0;
     left: 0;
-
 }
 #description {
     width: 100%;
@@ -176,7 +121,7 @@ header a:hover {
     padding: 5px;
 }
 
-/* Card Background Images */
+        /* Card Background Images */
 #python {
     background-image: url("../images/soccer.jpg");
     background-size: cover;
@@ -201,7 +146,7 @@ header a:hover {
     background-position: center;
 }
 
-/* Footer */
+        /* Footer */
 #contact {
     text-align: center;
     color: var(--textcolor);
