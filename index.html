@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-<!-- add main -->
+
 <body>
     <header>
         <h1>Daniel Park</h1>
@@ -30,32 +30,19 @@
 
     <section class="backgroundimg"></section>
 
-    
-
     <main class="mainFlex">
-        <div class="flex">
-            <section>
-                <!-- just add this with the other cards with same formatting and add profile photo as background image - align left with css - use card first class -->
-                    <article id="aboutme">
-                        <h2>About Me</h2>
-                        <img id="danny" src="../assets/images/danny.jpg">
-                        <div class="section">
-                            <p id="background">
-                                Welcome to my working portfolio. I'm currently a full stack web development stutent at the University of Texas - Austin Coding Bootcamp.
-                                Below you'll find my past projects. I've taken introductory classes in Python, C++, and Swift as part of the App Development and Design program at Austin Community College.
-                                I hope to continue learning these languages at Austin Community College as I grow my career. 
-                            </p>
-                            <hr>
-                            <p id="background">
-                                In my free time I enjoy photography, hiking, and exploring the outdoors, and I hope to tie these hobbies into my developer knowledge
-                                to create real world applications. 
-                            </p>
-                        </div>
-                    </article>
-            </section>
-        </div>
-        <div>
-            <section class="section">
+            <section class="section" id="aboutme">
+                <article class="card first" id="danny">
+                    <h2>About Me</h2>
+                        <p id="description">
+                            Welcome to my working portfolio. I'm currently a full stack web development stutent at the University of Texas - Austin Coding Bootcamp.
+                            Below you'll find my past projects. I've taken introductory classes in Python, C++, and Swift as part of the App Development and Design program at Austin Community College.
+                            <br>
+                            I hope to continue learning these languages at Austin Community College as I grow my career. In my free time I enjoy photography, hiking, and exploring the outdoors, and I hope to tie these hobbies into my developer knowledge
+                            to create real world applications. 
+                        </p>
+                    </div>
+                </article>
                 <article class="card first" id="python">
                     <a href="https://github.com/lildano50/Python-Class"><span class="link"></span></span></a>
                         <h2>Soccer Simulator</h2>
@@ -99,6 +86,4 @@
     </footer>
 
 </body>
-<!-- take footer out of body and main -->
-
 </html>
